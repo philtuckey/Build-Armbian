@@ -120,8 +120,8 @@ mount -o rw $PART_ROOT $DIR_INSTALL
 cd /
 echo "Copy BIN"
 tar -cf - bin | (cd $DIR_INSTALL; tar -xpf -)
-#echo "Copy BOOT"
-#mkdir -p $DIR_INSTALL/boot
+echo "Create BOOT"
+mkdir -p $DIR_INSTALL/boot
 #tar -cf - boot | (cd $DIR_INSTALL; tar -xpf -)
 echo "Create DEV"
 mkdir -p $DIR_INSTALL/dev
